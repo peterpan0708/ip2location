@@ -42,7 +42,7 @@ func main() {
             return
         }
         var resp IpResponse
-        resp.Country = results.Country_short
+        resp.Country = results.Country_long
         resp.Region = results.Region
         resp.City = results.City
         c.JSON(200, gin.H{
